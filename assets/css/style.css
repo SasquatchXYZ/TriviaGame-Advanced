@@ -1,0 +1,45 @@
+* {
+
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+h1{
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.start{
+
+}
+.question-block {
+    width: 960px;
+    text-align: left;
+}
+
+.question{
+    margin: 10px auto;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid black;
+}
+li {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.done {
+    display: none;
+}
+.results {
+    display: none;
+}
+
+.reset {
+    display: none;
+}
