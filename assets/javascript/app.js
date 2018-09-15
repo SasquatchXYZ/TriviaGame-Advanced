@@ -25,8 +25,11 @@ timer = {
         if (timer.time === 0) {
             $("#timer-display").text("Time's Up!");
             clearInterval(intervalID);
+            timer.reset();
             trivia.blank++;
-            transitionQuestions();
+            console.log(trivia.blank);
+            console.log(playerchoice);
+            /*transitionQuestions();*/
         } else {
 
         }
@@ -185,6 +188,10 @@ function createQuestions(question, key) {
     return block;
 }
 
+function timedOut () {
+    
+}
+
 function checkAnswer(pick) {
     playerchoice = pick;
     console.log(playerchoice);
@@ -219,7 +226,8 @@ function displayResults() {
 }
 function transitionQuestions() {
     trivia.questionNum++;
-    playerchoice = null;
+    $(".answer-page").hide();
+    playerchoice = undefined;
     if (trivia.questionNum < questions.length) {
         $(".answer-page .question-block").empty();
         showQuestion();
