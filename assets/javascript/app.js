@@ -25,8 +25,9 @@ timer = {
         if (timer.time === 0) {
             $("#timer-display").text("Time's Up!");
             clearInterval(intervalID);
+            $(".question-block").hide();
             timer.reset();
-            trivia.blank++;
+            timedOut();
             console.log(trivia.blank);
             console.log(playerchoice);
             /*transitionQuestions();*/
@@ -189,7 +190,12 @@ function createQuestions(question, key) {
 }
 
 function timedOut () {
-    
+    trivia.blank++;
+    $(".answer-page").text("Wake Up! You took to long, the correct answer was " + answertext).show();
+
+    setTimeout(clearboard, 4000);
+    setTimeout(transitionQuestions, 5000);
+
 }
 
 function checkAnswer(pick) {
@@ -198,16 +204,17 @@ function checkAnswer(pick) {
     console.log(answervalue);
     if (playerchoice === answervalue) {
         console.log("Correct!");
-        $(".answer-page").text("Correct!");
+        $(".answer-page").text("Correct!").show();
         trivia.correct++;
     } else {
         console.log("Wrong the correct answer was " + answertext);
-        $(".answer-page").text("Wrong... The correct answer was " + answertext);
+        $(".answer-page").text("Wrong... The correct answer was " + answertext)
+            .show();
         trivia.incorrect++;
     }
 
-    setTimeout(clearboard, 8000);
-    setTimeout(transitionQuestions, 10000);
+    setTimeout(clearboard, 4000);
+    setTimeout(transitionQuestions, 5000);
 
 }
 
@@ -262,6 +269,7 @@ $(document).ready(function() {
     $(".reset").on("click", function() {
         $(".start").show();
         timer.reset();
+        $(".results, .reset").hide().empty();
     })
 
 });
