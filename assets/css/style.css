@@ -18,6 +18,8 @@ body {
 
 .header {
     background-color: black;
+    border: 2px outset darkturquoise;
+    border-radius: 2em;
 }
 
 h1{
@@ -26,6 +28,7 @@ h1{
     margin: 10px auto;
     color: darkturquoise;
     text-decoration: underline;
+    text-shadow: 2px 2px 8px white;
 }
 
 #timer-display {
@@ -85,6 +88,7 @@ ul li:hover {
 }
 
 .answer-page {
+    margin: 20px auto;
     display: none;
     font-size: 25px;
     font-weight: bolder;

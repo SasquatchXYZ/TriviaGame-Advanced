@@ -161,27 +161,29 @@ function resetQuestions() {
 
 function showQuestion() {
     questions = Object.keys(questionslist);
-    var questiontitle = questions[trivia.questionNum];
-    var question = questionslist[questiontitle];
-    var questionblocks = createQuestions(question, questiontitle);
+    let questiontitle = questions[trivia.questionNum];
+    let question = questionslist[questiontitle];
+    let questionblocks = createQuestions(question, questiontitle);
     $(".question-block").append(questionblocks).show();
 }
 
 function createQuestions(question, key) {
-/*    var block = $("<div class='question' name='" + key + "'>" + question.question + "</div>");
-    let choice1 = $("<button class='choice' data-value='A'>" + question.A + "</button>");
-    let choice2 = $("<button class='choice' data-value='B'>" + question.B + "</button>");
-    let choice3 = $("<button class='choice' data-value='C'>" + question.C + "</button>");
-    let choice4 = $("<button class='choice' data-value='D'>" + question.D + "</button>");
-    block.append(choice1, choice2, choice3, choice4);*/
+    let block = $(`<div class="question" name="${key}"><h3>${question.question}</h3><hr>
+                    <ul>
+                    <li><h4 class="choice" data-value="A">${question.A}</h4></li>
+                    <li><h4 class="choice" data-value="B">${question.B}</h4></li>
+                    <li><h4 class="choice" data-value="C">${question.C}</h4></li>
+                    <li><h4 class="choice" data-value="D">${question.D}</h4></li>
+                    </ul>
+                    </div>`);
 
-    var block = $("<div class='question' name='" + key + "'><h3>" + question.question + "</h3>" +
+/*    var block = $("<div class='question' name='" + key + "'><h3>" + question.question + "</h3>" +
         "<ul>" +
         "<li><h4 class='choice' data-value='A'>" + question.A + "</h4></li>" +
         "<li><h4 class='choice' data-value='B'>" + question.B + "</h4></li>" +
         "<li><h4 class='choice' data-value='C'>" + question.C + "</h4></li>" +
         "<li><h4 class='choice' data-value='D'>" + question.D + "</h4></li>" +
-        "</ul>" + "</div>");
+        "</ul>" + "</div>");*/
 
     answervalue = question.ans.value;
     answertext = question.ans.display;
@@ -193,7 +195,7 @@ function timedOut () {
     trivia.blank++;
     $(".answer-page").text("Wake Up! You took to long, the correct answer was '" + answertext + "'.").show();
 
-    setTimeout(clearboard, 4000);
+    setTimeout(clearBoard, 4000);
     setTimeout(transitionQuestions, 5000);
 
 }
@@ -213,12 +215,12 @@ function checkAnswer(pick) {
         trivia.incorrect++;
     }
 
-    setTimeout(clearboard, 4000);
+    setTimeout(clearBoard, 4000);
     setTimeout(transitionQuestions, 5000);
 
 }
 
-function clearboard() {
+function clearBoard() {
     $(".question-block").empty();
 
 }
