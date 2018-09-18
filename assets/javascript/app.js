@@ -84,77 +84,77 @@ function resetTrivia() {
 function resetQuestions() {
     return {
         q0 : {
-            question : "What race is Chewbacca?",
-            A : "Mon Calamari",
-            B : "Wookie",
-            C : "Jawa",
-            D : "Bantha",
-            ans : { value : "B",
-                display : "Wookie"}
+            question : "The Rubik's cube was initially sold under what name?",
+            A : "Puzzle Cube",
+            B : "Color Block",
+            C : "Magic Cube",
+            D : "Manipulatable Toy",
+            ans : { value : "C",
+                display : "Magic Cube"}
         },
         q1 : {
-            question : "What give's lightsabers their color?",
-            A : "The owner's energy.",
-            B : "The planet it was made on.",
-            C : "The owner's age.",
-            D : "The crystals used to make them.",
+            question : "The basic 3x3x3 cube has how many possible positions?",
+            A : "500,000,000,000,000,000",
+            B : "2 Trillion",
+            C : "25 Billion",
+            D : "43,252,003,274,489,856,000",
             ans : { value : "D",
-                display : "The crystals used to make them."}
+                display : "43,252,003,274,489,856,000"}
 
         },
         q2 : {
-            question : "What is the name of the snow planet in Episode V?",
-            A : "Hoth",
-            B : "Endor",
-            C : "Alderaan",
-            D : "Naboo",
-            ans : { value : "A",
-                display : "Hoth"}
+            question : "The first Rubik's Cube World Championship was held in what year and what city?",
+            A : "1983, London",
+            B : "1990, New York City",
+            C : "1982, Budapest",
+            D : "1985, Paris",
+            ans : { value : "C",
+                display : "1982, Budapest"}
         },
         q3 : {
-            question : "What is the name of the only Super Star Destroyer see in the films, Darth Vader's flagship?",
-            A : "Devastator",
-            B : "Executor",
-            C : "Dominator",
-            D : "Lusankya",
-            ans : { value : "B",
-                display : "Executor"}
+            question : "How many faces does a Megaminx have?",
+            A : "16",
+            B : "8",
+            C : "14",
+            D : "12",
+            ans : { value : "D",
+                display : "12"}
         },
         q4 : {
-            question : "How did Han Solo acquire the Millenium Falcon?",
-            A : "Stole it.",
-            B : "Won it in a raffle.",
-            C : "Bought it.",
-            D : "Won it in a Sabacc game.",
-            ans : { value : "D",
-                display : "Won it in a Sabacc game"}
+            question : "Even numbered cubes (4x4x4, 6x6x6, etc.) are different from the odd cubes in what way?",
+            A : "They do not have fixed centers.",
+            B : "They are easier to take apart.",
+            C : "They cannot be magnetized.",
+            D : "They cannot be speed solved.",
+            ans : { value : "A",
+                display : "They do not have fixed centers."}
         },
         q5 : {
-            question : "What was Luke's call sign in Episode IV?",
-            A : "Red Five",
-            B : "Big Red",
-            C : "Rogue Five",
-            D : "Epic One",
-            ans : { value : "A",
-                display : "Red Five"}
+            question : "The original Cube was invented in what year?",
+            A : "1976",
+            B : "1960",
+            C : "1974",
+            D : "1979",
+            ans : { value : "C",
+                display : "1974"}
         },
         q6 : {
-            question : "What system can Cloud City can be found in?",
-            A : "Lando",
-            B : "Bespin",
-            C : "Dagobah",
-            D : "Corellia",
-            ans : { value : "B",
-                display : "Bespin"}
+            question : "What is the current world record for the fastest solve of the standard 3x3x3?",
+            A : "4.72 seconds",
+            B : "5.01 seconds",
+            C : "4.22 seconds",
+            D : "5.84 seconds",
+            ans : { value : "C",
+                display : "4.22 seconds"}
         },
         q7 : {
-            question : "Who is the bounty hunter who finally delivers Han to Jabba?",
-            A : "Bossk",
-            B : "Zuckuss",
-            C : "Dengar",
-            D : "Boba Fett",
-            ans : { value : "D",
-                display : "Boba Fett"}
+            question : "What is the largest current production model of the cube?",
+            A : "19x19x19",
+            B : "17x17x17",
+            C : "15x15x15",
+            D : "13x13x13",
+            ans : { value : "B",
+                display : "17x17x17"}
         }
     }
 }
