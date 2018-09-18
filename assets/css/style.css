@@ -1,19 +1,25 @@
 * {
-
+    font-family: "Droid Sans Mono", "Gentium Book Basic", Arial, sans-serif;
 }
 
 body {
     text-align: center;
     margin: 0 auto;
+    width: 960px;
 }
 h1{
     font-size: 2em;
     font-weight: 900;
 }
 
+#timer-display {
+    margin: 10px auto;
+}
+
 .start{
 
 }
+
 .question-block {
     width: 960px;
     text-align: left;
@@ -36,6 +42,7 @@ li {
 .done {
     display: none;
 }
+
 .results {
     display: none;
 }

@@ -191,7 +191,7 @@ function createQuestions(question, key) {
 
 function timedOut () {
     trivia.blank++;
-    $(".answer-page").text("Wake Up! You took to long, the correct answer was " + answertext).show();
+    $(".answer-page").text("Wake Up! You took to long, the correct answer was '" + answertext + "'.").show();
 
     setTimeout(clearboard, 4000);
     setTimeout(transitionQuestions, 5000);
@@ -208,7 +208,7 @@ function checkAnswer(pick) {
         trivia.correct++;
     } else {
         console.log("Wrong the correct answer was " + answertext);
-        $(".answer-page").text("Wrong... The correct answer was " + answertext)
+        $(".answer-page").text("Wrong... The correct answer was '" + answertext + "'.")
             .show();
         trivia.incorrect++;
     }
