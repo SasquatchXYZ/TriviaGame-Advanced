@@ -195,8 +195,8 @@ function timedOut () {
     trivia.blank++;
     $(".answer-page").text("Wake Up! You took to long, the correct answer was '" + answertext + "'.").show();
 
-    setTimeout(clearBoard, 4000);
-    setTimeout(transitionQuestions, 5000);
+    setTimeout(clearBoard, 2000);
+    setTimeout(transitionQuestions, 3000);
 
 }
 
@@ -215,8 +215,8 @@ function checkAnswer(pick) {
         trivia.incorrect++;
     }
 
-    setTimeout(clearBoard, 4000);
-    setTimeout(transitionQuestions, 5000);
+    setTimeout(clearBoard, 2000);
+    setTimeout(transitionQuestions, 3000);
 
 }
 
